@@ -9,6 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+      
+      - name: Install Surge
+        run: npm install --global surge
+      
       - name: Deploy to Surge
         uses: surge/add-static-site@latest
         with:
