@@ -19,8 +19,6 @@ jobs:
         run: npm install --global surge
       
       - name: Deploy to Surge
-        uses: surge/add-static-site@latest
-        with:
-          project: build
-          domain: versed-clock.surge.sh
-          token: ${{ secrets.SECRETS_SURGE_TOKEN }}
+        env:
+          SURGE_TOKEN: ${{ secrets.SECRETS_SURGE_TOKEN }}
+          run: surge ./domain versed-clock.surge.sh
