@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tienda</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body class="background">
+  <h1 >Proyecto 1</h1>
+
+  <!--**************************************Barra de Navegacion*************************************-->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tienda Virtual</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Productos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Quienes Somos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mision</a></li>
+              <li><a class="dropdown-item" href="#">Vision</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Valores</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Acerca de</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <br><br><br><br><br>
+
+  <!--**************************************Contenido 1*************************************-->
+
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col columnas">
+        <h5><b>Tecnologico</b></h5>
+        <div id="carousel1" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Imagenes/case.png" class="tamano" alt="...">
+              <p style="text-align: left;">SUPCASE for iPad 9th Generation Case with Screen Protector (Unicorn Beetle Pro), [Built-in Stand] Heavy Duty Rugged Protective</p>
+              <h6 style="text-align: left;">USD 29.95 </h6>
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/tablet.png" class="tamano" alt="...">
+              <p style="text-align: left;">OtterBox SYMMETRY FOLIO SERIES Case for iPad 7th, 8th & 9th Gen (10.2" Display - 2019, 2020 & 2021 version) - Retail Packagin</p>
+              <h6 style="text-align: left;">USD 39.00 </h6>
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/pc.png" class="tamano" alt="...">
+              <p style="text-align: left;">Acer Aspire S27-1755-UP11 AIO Desktop | 27" WQHD 2560 x 1440 IPS Display | 12th Gen Intel Core i5-1240P | Intel Iris Xe Graph</p>
+              <h6 style="text-align: left;">USD 829.99 </h6>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col columnas">
+        <h5><b>Gaming</b></h5>
+        <div id="carousel2" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Imagenes/ps.png" class="tamano" alt="...">
+              <p style="text-align: left;">Playstation 5 Disc Version PS5 Console - Additional Controller, 4K-TV Gaming, 120Hz 8K Output, 16GB. GDDR6, 825GB SSD, WiFi 6, Bluetooth *5.1</p>
+              <h6 style="text-align: left;">USD 539.00 </h6>
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/retro.png" class="tamano" alt="...">
+              <p style="text-align: left;">Retro-Bit Retro Duo 2 in 1 Console System - for Original NES/SNES, & Super Nintendo Games - Silver/Black</p>
+              <h6 style="text-align: left;">USD 57.66 </h6>
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/acer.png" class="tamano" alt="...">
+              <p style="text-align: left;">Acer Nitro V Gaming Laptop | Intel Core i5-13420H Processor | NVIDIA GeForce RTX 4050 Laptop GPU | 15.6" FHD IPS 144Hz Display | 8GB DDR5 </p>
+              <h6 style="text-align: left;">USD 772.46 </h6>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col columnas">
+        <h5><b>CPU</b></h5>
+        <div id="carousel3" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Imagenes/image3.png" class="tamano" alt="...">
+              <p style="text-align: left;">Thermaltake Glacier 360 Liquid-Cooled PC (AMD Ryzen 5 5600X, RTX 3060, 16GB 3600Mhz DDR4 ToughRAM RGB Memory, 1TB NVMe M.2, WiFi</p>
+              <h6 style="text-align: left;">USD 1066.08 </h6>
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/image4.png" class="tamano" alt="...">
+              <p style="text-align: left;">Skytech Archangel Gaming PC, Intel i5 14400F 2.5 GHz (4.7GHz Turbo Boost), NVIDIA RTX 4060 8GB GDDR6X, 2TB SSD, 32GB DDR5 RAM 5600 RGB</p>
+              <h6 style="text-align: left;">USD 1199.99 </h6>
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/image5.png" class="tamano" alt="...">
+              <p style="text-align: left;">Skytech Gaming Shiva Gaming PC Desktop – AMD Ryzen 5 7600X 4.7 GHz, NVIDIA RTX 4060, 1TB NVME SSD, 32GB DDR5 RAM RGB</p>
+              <h6 style="text-align: left;">USD 1299.99 </h6>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col columnas">
+        <h5><b>Accesorios</b></h5>
+        <div id="carousel4" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Imagenes/fan.png" class="tamano" alt="...">
+              <p style="text-align: left;">ASUS Dual NVIDIA GeForce RTX 3050 6GB Gaming Graphics Card - PCIe 4.0, 6GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, Native DVI-D</p>
+              <h6 style="text-align: left;">USD 179.99 </h6>
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/table.png" class="tamano" alt="...">
+              <p style="text-align: left;">Gumdrop DropTech Clear Case Fits Apple iPad 9th | 8th | 7th Gen (10.2-inch) Designed for K-12 Students Teachers & Classrooms–Drop</p>
+              <h6 style="text-align: left;">USD 29.95 </h6>
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/speaker.png" class="tamano" alt="...">
+              <p style="text-align: left;">TP-Link Deco AX3000 WiFi 6 Mesh System(Deco X55) - Covers up to 6500 Sq.Ft. , Replaces Wireless Router and Extender</p>
+              <h6 style="text-align: left;">USD 169.98 </h6>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <!----**************************************Contenido 2*************************************-->
+  
+  <div class="container text-center diseno">
+    <div class="row align-items-start">
+      <h5 style="text-align: left; padding-top: 10px;"><b>Ofertas del dia</b></h5>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class= "fila2">
+              <img src="2Imagenes/dog.png" class="tamano" alt="...">
+              <p>Tractive GPS Tracker & Health Monitoring for Dogs - Market Leading Pet GPS Location Tracker, Wellness & Escape Alerts, Waterproof, Works with Any Collar (Brown) <br><b>USD 23.83</b></p>
+            </div>
+            <div class= "fila2">
+              <img src="2Imagenes/watch.png" class="tamano" alt="...">
+              <p>Smart Watch for Men Women Kids Answer/Make Calls,Fitness Tracker Watch with 1.47 Screen,24/7 Heart Rate Sleep Monitor,130+Sport Modes Smartwatches <br><b>USD 49.99</b></p>
+            </div>
+            <div class= "fila2">
+              <img src="2Imagenes/set2.png" class="tamano" alt="...">
+              <p>HyperX Cloud Alpha - Gaming Headset, Dual Chamber Drivers, Legendary Comfort, Aluminum Frame, Detachable Microphone, Works on PC, PS4, PS5, Xbox One <br><b>USD 37.52</b></p>
+            </div>
+            <div class= "fila2">
+              <img src="2Imagenes/conectores.png" class="tamano" alt="...">
+              <p>Belkin Connect 11-in-1 Universal USB-C Pro Dock w/ 3-Monitor Support, Silicon Motion Technology - Works with Mac, Windows, and Chromebook - 100W PD w <br><b>USD 25.99</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="fila2">
+              <img src="2Imagenes/holder.png" class="tamano" alt="...">
+              <p>Litwaro Desk Side Storage Organizer, Under Desk Laptop Holder Clamp on Desk Shelf, No Drill Laptop Desk Mount with Magnetic Pen Holder, Hanging Desk Organizer <br><b>USD 49.99</b></p>
+            </div>
+            <div class= "fila2">
+              <img src="2Imagenes/handmouse.png" class="tamano" alt="...">
+              <p>Amazon Basics Rectangular Gel Computer Mouse Pad with Wrist Support Rest, Small, Black <br><b>USD 49.99</b></p>
+            </div>
+            <div class= "fila2">
+              <img src="2Imagenes/bag.png" class="tamano" alt="...">
+              <p>Lenovo Laptop Bag T210, Messenger Shoulder Bag for Laptop or Tablet, Sleek, Durable & Water-Repellent Fabric<br> <b>USD 49.99</b></p>
+            </div>
+            <div class= "fila2">
+              <img src="2Imagenes/airpod.png" class="tamano" alt="...">
+              <p>JBL Tune Flex - True Wireless Noise Cancelling Earbuds (Black), Small<br> <b>USD 49.99</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class= "fila2">
+              <img src="2Imagenes/watch.png" class="tamano" alt="...">
+              <p>Smart Watch for Men Women Kids Answer/Make Calls,Fitness Tracker Watch with 1.47 Screen,24/7 Heart Rate Sleep Monitor,130+Sport Modes Smartwatches <br> <b>USD 49.99</b></p>
+            </div>
+            <div class= "fila2">
+              <img src="2Imagenes/watch.png" class="tamano" alt="...">
+              <p>Smart Watch for Men Women Kids Answer/Make Calls,Fitness Tracker Watch with 1.47 Screen,24/7 Heart Rate Sleep Monitor,130+Sport Modes Smartwatches <br> <b>USD 49.99</b></p>
+            </div>
+            <div class= "fila2">
+              <img src="2Imagenes/watch.png" class="tamano" alt="...">
+              <p>Smart Watch for Men Women Kids Answer/Make Calls,Fitness Tracker Watch with 1.47 Screen,24/7 Heart Rate Sleep Monitor,130+Sport Modes Smartwatches <br> <b>USD 49.99</b></p>
+            </div>
+            <div class= "fila2">
+              <img src="2Imagenes/watch.png" class="tamano" alt="...">
+              <p>Smart Watch for Men Women Kids Answer/Make Calls,Fitness Tracker Watch with 1.47 Screen,24/7 Heart Rate Sleep Monitor,130+Sport Modes Smartwatches <br> <b>USD 49.99</b></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
