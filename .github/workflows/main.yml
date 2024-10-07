@@ -2,22 +2,16 @@ name: Deploy to Surge
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Build and Deploy
-      run: |
-        # Configurar Surge.sh
-        npm install --global surge
-        surge token <SURGE_API_KEY> # Reemplazar <SURGE_API_KEY> con la API Key de Surge de cada estudiante
-
-        # Desplegar en Surge.sh
-        surge --project ./ --domain testy-place.surge.sh # Reemplazar <SURGE_SUBDOMAIN> con un subdominio único para cada estudiante
+      - uses: actions/checkout@v3
+      - name: Deploy to Surge
+        uses: surge/add-static-site@latest
+        with:
+          project: build
+          domain: versed-clock.surge.sh
+          token: ${{ secrets_SURGE_TOKEN }}
