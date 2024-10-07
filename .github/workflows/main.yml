@@ -14,4 +14,4 @@ jobs:
         with:
           project: build
           domain: versed-clock.surge.sh
-          token: ${{ secrets_SURGE_TOKEN }}
+          token: ${{ SECRETS_SURGE_TOKEN }}
